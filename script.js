@@ -36,3 +36,20 @@ const displayPokemon = (pokemon) => {
 };
 
 fetchPokemon();
+
+function myFunction() {
+    var input, filter, ol, li, h2, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ol = document.getElementById("pokedex");
+    li = ol.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("h2")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
