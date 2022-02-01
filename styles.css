@@ -8,6 +8,7 @@
     --main-blue: #3B4CCA;
     --main-yellow: #ffde00;
     --main-bg: #111111;
+    
 
 }
 
@@ -16,12 +17,23 @@ h1 {
     font-size: 50px;
     color: var(--main-yellow);
     text-align: center;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.subtitle {
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--main-yellow);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
 }
 
 .git {
     font-weight: 500;
     font-size: 16px;
-    color: var(--main-yellow);
+    color: white;
     text-decoration: none;
     text-align: center;
     margin: 0px;
@@ -45,9 +57,25 @@ body {
     text-align: center;
 }
 
+.navbar {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--main-yellow); 
+    margin: 20px;
+    margin-bottom: 10px;   
+}
+
+.navbar:hover {
+    zoom: 150%;
+    font-weight: 700;
+    color: var(--main-red);
+}
+
 .card {
     background-color: white;
     list-style: none;
+    size: minmax(0% 20%);
     margin: 20px;
     margin-top: minmax(25px, 40px);
     padding-top: 20px;
@@ -105,7 +133,7 @@ img {
 }
 
 .card-image {
-    border-radius: 100%;
+    border-radius: 5%;
     box-shadow:  13px 13px 25px #d9d9d9,
                 -13px -13px 25px #ffffff;
 }
@@ -113,7 +141,7 @@ img {
 .card-back-image {
     position: absolute;
     visibility: hidden;
-    border-radius: 100%;
+    border-radius: 5%;
     box-shadow:  13px 13px 25px #d9d9d9,
                 -13px -13px 25px #ffffff;
 }
@@ -162,8 +190,8 @@ input {
     border-radius: 10px;
     border: none;
     display: flex;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
 input:focus {

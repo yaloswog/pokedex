@@ -6,7 +6,7 @@ const fetchPokemon = () => {
 
     const promises = [];
 
-    for (let i = 1; i <= 151; i++) {
+    for (let i = 152; i <= 251; i++) {
         const url = `https://pokeapi.co/api/v2/pokemon/${i}`;
         promises.push(fetch(url).then((res) => res.json()));
     }
@@ -33,7 +33,7 @@ const displayPokemon = (pokemon) => {
     <div class="card-front">
         <img class="card-image" src="${pokeman.image}"/>
         <img class="card-back-image" src="${pokeman.back_image}"/>
-        <h2 class="card-title">${pokeman.name} (${pokeman.id} / 151)</h2>
+        <h2 class="card-title">${pokeman.name} (${pokeman.id} / 251)</h2>
         <p class="card-subtitle">Type: ${pokeman.type}</p>
         <p class="card-subtitle">Abilities: ${pokeman.ability}</p>
         <p class="card-subtitle">Height: ${pokeman.height}dm Weight: ${pokeman.weight}hg</p>
