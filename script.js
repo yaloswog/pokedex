@@ -16,6 +16,7 @@ const fetchPokemon = () => {
             name: data.name,
             id: data.id,
             image: data.sprites['front_shiny'],
+            back_image: data.sprites['back_shiny'],
             type: data.types.map((type) => type.type.name).join(', '),
             ability: data.abilities.map((ability) => ability.ability.name).join(', '),
             height: data.height,
@@ -31,6 +32,7 @@ const displayPokemon = (pokemon) => {
     <li class="card" >
     <div class="card-front">
         <img class="card-image" src="${pokeman.image}"/>
+        <img class="card-back-image" src="${pokeman.back_image}"/>
         <h2 class="card-title">${pokeman.name} (${pokeman.id})</h2>
         <p class="card-subtitle">Type: ${pokeman.type}</p>
         <p class="card-subtitle">Abilities: ${pokeman.ability}</p>
